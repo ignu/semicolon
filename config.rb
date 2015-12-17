@@ -57,11 +57,11 @@ helpers do
   end
 
   def feedburner_url
-    "http://feeds.feedburner.com/Turing-Incomplete"
+    "http://feeds.feedburner.com/SemicolonFM"
   end
 
   def github_url
-    "https://github.com/turing-incomplete/turing-incomplete"
+    "https://github.com/ignu/semicolon"
   end
 
   def itunes_url
@@ -69,19 +69,15 @@ helpers do
   end
 
   def podcast_email
-    "podcast@turing.cool"
+    "len@barrison.com"
   end
 
   def podcast_name
-    "Turing-Incomplete"
+    "Semicolon FM"
   end
 
   def podcast_description
-    "A Podcast About Programming"
-  end
-
-  def stickers_url
-    "https://www.stickermule.com/marketplace/4818-turing-incomplete"
+    "A Podcast About JavaScript"
   end
 
   def tags
@@ -96,12 +92,12 @@ helpers do
   end
 
   def twitter_url
-    "https://twitter.com/turingcool"
+    "https://twitter.com/semicolonfm"
   end
 
   def url(path = "")
     path = path.gsub(/^\//, '')
 
-    "http://turing.cool/#{path}"
+    "http://semicolon.fm/#{path}"
   end
 end
