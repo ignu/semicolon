@@ -73,7 +73,7 @@ helpers do
   end
 
   def podcast_name
-    "Semicolon FM"
+    "Semicolon"
   end
 
   def podcast_description

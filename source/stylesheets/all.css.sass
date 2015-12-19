@@ -1,23 +1,28 @@
 @import compass/css3/transform
 @import fittext
 @import normalize
-@import url(http://fonts.googleapis.com/css?family=Amatic+SC)
+
+@font-face
+  font-family: 'Revue'
+  src: url('./fonts/Revue.ttf.eot')
+  font-weight: normal
+  font-style: normal
 
 $body-font-family: "Lucida Grande", Tahoma, Verdana, "Helvetica Neue", Helvetica, sans-serif
-$header-font-family: "Amatic SC", "Futura-CondensedMedium", "DINCondensed-Bold" , sans-serif
+$header-font-family: "Revue", "Futura-CondensedMedium", "DINCondensed-Bold" , sans-serif
 $header-font-weight: lighter
 
 $black: #000
-$blue: #1aa1db
+$blue: #0f1e3d
 $dark-gray: #333
 $light-gray: #999
 $green: #23dd33
 $light-yellow: #fefb82
 $orange: #fd743b
 $red: #fc4620
-$white: #fff
+$white: #f9fae2
 
-$body-background: $white
+$body-background: #2666ae
 $border: $black
 $explicit: $light-gray
 $link: $blue
@@ -25,7 +30,7 @@ $mp3: $green
 $tag: $red
 $text-background: $white
 $text: $black
-$wrapper-background: $light-yellow
+$wrapper-background: $blue
 
 body
   background: $body-background
@@ -47,18 +52,22 @@ h1, h2
   width: 100%
 
 h1
-  @include fittext($min-media: 320px, $max-media: 960px, $min-font-size: 2.5em, $max-font-size: 7.5em, $media-increment: 12, $font-increment: 0.1)
+  @include fittext($min-media: 320px, $max-media: 960px, $min-font-size: 2.5em, $max-font-size: 3.5em, $media-increment: 12, $font-increment: 0.1)
   text-transform: uppercase
 
   a
-    color: $text
+    color: $white
 
 h2
-  @include fittext($min-media: 320px, $max-media: 960px, $min-font-size: 1.25em, $max-font-size: 3.75em, $media-increment: 24, $font-increment: 0.1)
+  @include fittext($min-media: 320px, $max-media: 960px, $min-font-size: 1.15em, $max-font-size: 2.25em, $media-increment: 24, $font-increment: 0.1)
+  color: $white
 
 a
   color: $link
   text-decoration: none
+
+#header
+  padding: 20px
 
 blockquote
   margin: 1em
@@ -218,6 +227,17 @@ blockquote
   background: $body-background
   padding: 10em 0
   text-align: center
+
+body, html
+  height: 100%
+
+#temp-logo
+  padding: 20px
+  display: flex
+  justify-content: center
+
+#wrapper
+  padding: 20px
 
 @media all and (min-width: 961px)
   #wrapper, #content

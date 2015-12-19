@@ -35,9 +35,16 @@ html
 
   body
     #wrapper
-      h1 = link_to podcast_name, "/"
-      = partial :header if current_page.url == "/"
+      #header
+        h1 = link_to podcast_name, "/"
+        = partial :header if current_page.url == "/"
 
+      #temp-logo
+        div
+          img src="/cover-art-512.png"
+
+      #footer
+        h2 Coming in 2016
     /  .row
     /    ul.links
     /      li = link_to "iTunes", itunes_url, target: '_blank'
