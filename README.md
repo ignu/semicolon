@@ -1,6 +1,6 @@
-# Turing-Incomplete [![Build Status](https://travis-ci.org/turing-incomplete/turing-incomplete.svg?branch=master)](https://travis-ci.org/turing-incomplete/turing-incomplete)
+# Turing-Incomplete [![Build Status](https://travis-ci.org/ignu/semicolon.svg?branch=master)](https://travis-ci.org/ignu/semicolon)
 
-Source code for [turing.cool](http://turing.cool)
+Source code for [semicolon.fm](http://semicolon.fm)
 
 ## Developing Locally
 
