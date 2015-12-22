@@ -34,17 +34,17 @@ html
     = stylesheet_link_tag :all
 
   body
+    #header
+      div.logo
+        img src="/cover-art-512.png"
+      div.description
+        h2 Semicolon
+        'Semicolon is a weekly podcast discussing all things JavaScript including the latest JavaScript frameworks, trends, language advancemets and development practices.
+        div.host Hosted by <a href="http://twitter.com/ignu">Len Smith</a>
     #wrapper
-      #header
-        h1 = link_to podcast_name, "/"
-        = partial :header if current_page.url == "/"
+      .body Coming in 2016
 
-      #temp-logo
-        div
-          img src="/cover-art-512.png"
 
-      #footer
-        h2 Coming in 2016
     /  .row
     /    ul.links
     /      li = link_to "iTunes", itunes_url, target: '_blank'
